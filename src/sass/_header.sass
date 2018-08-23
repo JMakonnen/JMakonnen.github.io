@@ -1,0 +1,253 @@
+.header
+	padding-top: 27px
+	position: relative
+	z-index: 1
+	margin-bottom: 86px
+	max-width: 1140px
+	margin: 0 auto
+	padding-left: 15px
+	padding-right: 15px
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: url(../img/header/bg-header.png) no-repeat center center
+		z-index: -1
+	.top-line
+		display: flex
+		margin-bottom: 35px
+		.logo
+			margin-right: 88px
+		.features-wrap
+			display: flex		
+		&__features
+			display: flex
+			align-items: center
+			margin-right: 30px
+			&:last-child
+				margin-right: 0
+			img
+				margin-right: 8px
+		&__text
+			font-size: 18px
+			opacity: .9
+			span
+				margin-right: 5px
+				font-size: 24px
+				font-weight: 700
+	.header-title
+		background-image: linear-gradient(to right, #f0e394 0%, #b49b52 100%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		color: #ffd50c
+		font-family: "Roboto Condensed"
+		font-size: 60px
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 28px
+	.block
+		display: flex
+		align-items: flex-end
+		justify-content: space-between
+	.drug
+		width: 335px
+		min-height: 530px
+		&__title
+			font-family: 'Roboto', sans-serif
+			font-size: 22px
+			font-weight: 500
+		&__list
+			list-style-type: none	
+			padding: 0  
+			.drug__item
+				vertical-align: middle
+				font-size: 16px
+				position: relative					    	
+				margin-bottom: 7px		   
+				&:before
+					content: ''
+					text-align: center
+					display: inline-block
+					width: 24px
+					height: 24px
+					list-style-type: none
+					background-color: #d23c16
+					border-radius: 50px
+					vertical-align: middle
+					background-image: url(../img/header/chek-icon.png)
+					background-repeat: no-repeat 
+					background-position: center center		
+		&__imgs
+			position: relative
+			.img-1
+				position: absolute
+				top: 0
+				left: 0
+			.img-2
+				position: absolute
+				top: 25px
+				right: -40px				
+.line
+	height: 1px
+	width: 100%
+	border: 0		
+	background-image: -webkit-linear-gradient(left, transparent, rgba(167, 158, 158, 0.75), transparent)
+	margin-bottom: 8px
+
+.percent
+	bottom: 60px  
+	position: relative
+	width: 280px
+	text-align: center
+
+.opacity
+	opacity: 0.6
+
+.wrap
+	display: flex
+	margin-bottom: 24px !important
+
+.purchase
+	flex-direction: column 
+	position: relative
+	right: 0
+	top: -54px
+    
+	&__number
+		box-shadow: 0 2px 3px rgba(27, 27, 27, 0.55), inset 0 1px 2px rgba(255, 255, 255, 0.15)
+		border: 1px solid #ffffff
+		background-color: #f6f6f6
+		margin-right: 5px
+		color: #000
+		text-align: center
+		width: 46px
+		height: 52px
+		line-height: 52px
+		font-family: 'PT Sans', sans-serif
+		font-size: 50px
+		font-weight: 700
+		border-radius: 2px
+		&:last-child
+			margin-right: 10px
+	&__title
+		position: relative
+		font-family: 'PT Sans Narrow', sans-serif
+		width: 110px
+		font-size: 19px
+		font-weight: 400
+		display: inline-block
+		left: 25px
+		line-height: 19px
+		z-index: 1
+		&:before
+			content: ''
+			position: absolute
+			top: 5px
+			left: -13px
+			width: 130px
+			height: 100%
+			display: block
+			border-radius: 5px
+			background-color: #010000
+			opacity: 0.4
+			z-index: -1
+
+.form
+	box-shadow: 0 0 40px rgba(254, 213, 91, 0.25)
+	border-radius: 10px
+	height: 400px
+	background-color: #fff
+	&-price
+		text-align: center
+		.fullprice-wrap
+			position: relative
+			max-height: 117px
+			margin-bottom: 20px
+			.fullprice
+				position: absolute
+				z-index: 1
+				top: 22px
+				left: 20px
+				&__title
+					font-family: 'PT Sans Narrow', sans-serif
+					font-size: 18px
+					font-weight: 400
+					opacity: 0.3
+				&__price
+					font-family: 'PT Sans Narrow', sans-serif
+					font-size: 40px
+					font-weight: 700
+					text-decoration: line-through
+					opacity: 0.3
+			.discont
+				position: absolute
+				top: 22px
+				right: 14px
+				z-index: 1
+				&__title
+					font-family: 'PT Sans Narrow', sans-serif
+					font-size: 18px
+					font-weight: 400
+				&__price
+					font-family: 'PT Sans Narrow', sans-serif
+					font-size: 40px
+					font-weight: 700
+		.form-input
+			display: block
+			border-radius: 5px
+			border: 1px solid #e1e1e1
+			background-color: #f6f6f6
+			padding: 21px 50px 21px 15px
+			margin: 0 auto
+			margin-bottom: 15px
+		.form-button
+			position: relative
+			padding: 18px 20px 18px 15px
+			border-radius: 0 5px 5px 0
+			border: none
+			font-family: 'PT Sans Narrow', sans-serif
+			font-size: 22px
+			font-weight: 700
+			margin-left: 53px
+			color: #fff
+			text-transform: uppercase
+			box-shadow: 3px 4px 25px rgba(250, 74, 27, 0.35)
+			background-image: linear-gradient(to top, #d73f17 0%, #fa4a1b 100%)
+			cursor: pointer
+			&:before
+				content: '>'
+				text-align: center
+				line-height: 64px
+				font-size: 35px
+				position: absolute
+				top: 0
+				left: -51px
+				display: block
+				width: 51px
+				height: 64px
+				background-color: #b13412
+				border-radius: 5px 0 0 5px
+				cursor: pointer
+		
+		.form-secure
+			display: block
+
+
+
+	
+     
+  
+
+
+
+
+
+
+
+
+	
+				
+
